@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: simple-k8s-client
-        image: llcranmer/simple-k8s-client:1.0.1
+        image: "llcranmer/simple-k8s-client:1.0.1"
         env:
         - name: SERVICE_URL
           valueFrom:

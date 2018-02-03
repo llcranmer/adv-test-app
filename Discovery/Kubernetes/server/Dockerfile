@@ -6,7 +6,7 @@ ENV SOURCES /go/src/github.com/llcranmer/adv-test-app/Discovery/Kubernetes/serve
 
 COPY . ${SOURCES}
 
-RUN cd ${SOURCES} && CGO_ENABLED=0 go build
+RUN cd ${SOURCES}
 
 WORKDIR ${SOURCES}
 CMD ${SOURCES}server

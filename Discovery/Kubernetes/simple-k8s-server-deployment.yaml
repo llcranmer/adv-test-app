@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: simple-k8s-server
-        image: llcranmer/simple-k8s-server:1.0.1
+        image: "llcranmer/simple-k8s-server:1.0.1"
         ports:
         - containerPort: 9090
         env:
