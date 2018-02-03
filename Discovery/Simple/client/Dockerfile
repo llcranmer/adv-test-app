@@ -4,11 +4,11 @@ RUN apk update && apk upgrade && apk add --no-cache bash git
 
 RUN go get github.com/hashicorp/consul/api
 
-ENV SOURCES /go/src/github.com/llcranmer/adv-test-app/Discovery/Simple/client/
+ENV SOURCES /go/src/github.com/llcranmer/adv-test-app/Discovery/Simple/client
 
 COPY . ${SOURCES}
 
-RUN cd ${SOURCES} && CGO_ENABLED=0 go build
+RUN cd ${SOURCES}
 
 ENV CONSUL_HTTP_ADDR localhost:8500
 
